@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página principal del sistema de gestión de dueños y mascotas">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Adael Chimá">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="recursos/logo.png" alt="Logo de Mascotas" class="logo-header">
+        <h1>Sistema de Gestión de Dueños y Mascotas</h1>
+    </header>
+
+    <nav class="menu-principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="html/gestion_duenos.html">Gestión de Dueños</a>
+        <a href="html/gestion_mascotas.html">Gestión de Mascotas</a>
+        <a href="html/listado.html">Listado Mascotas-Dueños</a>
+    </nav>
+
+    <main class="contenedor-principal">
+        <h2>Bienvenido</h2>
+        <p>Utilice el menú superior para navegar entre las funcionalidades:</p>
+        <ul>
+            <li>**Gestión de Dueños:** Para registrar y administrar la información de los propietarios (R1).</li>
+            <li>**Gestión de Mascotas:** Para registrar y administrar las mascotas, asignándoles un dueño registrado (R2).</li>
+            <li>**Listado Mascotas-Dueños:** Para ver una tabla resumen de todas las mascotas con su respectivo dueño (R3).</li>
+        </ul>
+        <p>Todos los datos se almacenan en el **LocalStorage** del navegador.</p>
+    </main>
+</body>
+</html>

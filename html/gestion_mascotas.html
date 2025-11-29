@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de gestión de mascotas">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Adael Chimá">
+    <title>Gestión de Mascotas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="../recursos/logo.png" alt="Logo de Mascotas" class="logo-header">
+        <h1>Gestión de Mascotas</h1>
+    </header>
+    <nav class="menu-principal">
+        <a href="../index.html">Inicio</a>
+        <a href="gestion_duenos.html">Gestión de Dueños</a>
+        <a href="gestion_mascotas.html" class="active">Gestión de Mascotas</a>
+        <a href="listado.html">Listado Mascotas-Dueños</a>
+    </nav>
+
+    <main class="contenedor-principal">
+        <h2>Registro de Mascotas</h2>
+        <form id="form-mascota">
+            <label for="idMascota">ID Mascota:</label>
+            <input type="text" id="idMascota" required>
+
+            <label for="nombreMascota">Nombre de Mascota:</label>
+            <input type="text" id="nombreMascota" required>
+
+            <label for="tipoMascota">Tipo de Mascota:</label>
+            <select id="tipoMascota" required>
+                <option value="">Seleccionar</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="reptil">Reptil</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+            
+
+            <label for="duenoAsignado">Dueño Asignado(id):</label>
+            <select id="duenoAsignado" required>
+                <option value="">Cargando dueños...</option>
+            </select>
+
+            <button type="submit">Guardar Mascota</button>
+        </form>
+        <p id="mensaje-mascotas" class="mensaje"></p>
+    </main>
+</body>
+</html>

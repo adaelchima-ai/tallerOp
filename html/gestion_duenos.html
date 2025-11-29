@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina gestion dueños">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Adael Chimá">
+    <title>Gestión de Dueños</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="../recursos/logo.png" alt="Logo de Mascotas" class="logo-header">
+        <h1>Gestión de Dueños</h1>
+    </header>
+    <nav class="menu-principal">
+        <a href="../index.html">Inicio</a>
+        <a href="gestion_duenos.html" class="active">Gestión de Dueños</a>
+        <a href="gestion_mascotas.html">Gestión de Mascotas</a>
+        <a href="listado.html">Listado Mascotas-Dueños</a>
+    </nav>
+
+    <main class="contenedor-principal">
+        <h2>Registro de Propietarios</h2>
+        <form id="form-dueno">
+            <label for="identificacion">Identificación del Dueño:</label>
+            <input type="text" id="identificacion" required>
+
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" required>
+
+            <label for="telefono">Teléfono (Opcional):</label>
+            <input type="text" id="telefono">
+
+            <label for="direccion">Dirección (Opcional):</label>
+            <input type="text" id="direccion">
+
+            <button type="submit">Guardar Dueño</button>
+        </form>
+        <p id="mensaje-duenos" class="mensaje"></p>
+    </main>
+</body>
+</html>

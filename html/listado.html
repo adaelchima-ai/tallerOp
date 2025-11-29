@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página del listado de mascotas y sus dueños">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Adael Chimá">
+    <title>Listado Mascotas y Dueños</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="../recursos/logo.png" alt="Logo de Mascotas" class="logo-header">
+        <h1>Listado Mascotas-Dueños</h1>
+    </header>
+    <nav class="menu-principal">
+        <a href="../index.html">Inicio</a>
+        <a href="gestion_duenos.html">Gestión de Dueños</a>
+        <a href="gestion_mascotas.html">Gestión de Mascotas</a>
+        <a href="listado.html" class="active">Listado Mascotas-Dueños</a>
+    </nav>
+
+    <main class="contenedor-principal">
+        <h2>Mascotas Registradas y sus Propietarios</h2>
+        <table id="tabla-listado">
+            <thead>
+                <tr>
+                    <th>Nombre del dueño</th>
+                    <th>Nombre de la mascota</th>
+                    <th>Tipo de mascota</th>
+                    <th>Fecha de nacimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="5">No hay datos de mascotas para mostrar.</td></tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
